@@ -40,7 +40,8 @@ class HomeScreen extends StatelessWidget {
                       curve: Curves.easeInOut,
                       padding: EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),  // Rounded corners for modern look
+                        borderRadius: BorderRadius.circular(
+                            30), // Rounded corners for modern look
                         color: Theme.of(context).cardColor,
                         boxShadow: [
                           BoxShadow(
@@ -54,11 +55,14 @@ class HomeScreen extends StatelessWidget {
                       ),
                       child: AnimatedSwitcher(
                         duration: Duration(milliseconds: 300),
-                        transitionBuilder: (Widget child, Animation<double> animation) {
-                          return FadeTransition(opacity: animation, child: child);
+                        transitionBuilder:
+                            (Widget child, Animation<double> animation) {
+                          return FadeTransition(
+                              opacity: animation, child: child);
                         },
                         child: Column(
-                          key: ValueKey<bool>(themeController.isDarkTheme.value),
+                          key:
+                              ValueKey<bool>(themeController.isDarkTheme.value),
                           children: [
                             Text(
                               themeController.isDarkTheme.value

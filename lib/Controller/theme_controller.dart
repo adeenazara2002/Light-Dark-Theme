@@ -19,11 +19,12 @@ class ThemeController extends GetxController {
     primarySwatch: Colors.blue,
     fontFamily: 'Montserrat',
     textTheme: TextTheme(
-      headline1: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
+      headline1: TextStyle(
+          fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
       bodyText1: TextStyle(fontSize: 18, color: Colors.black87),
     ),
     cardColor: Colors.white,
-    scaffoldBackgroundColor: Color(0xFFF3F4F6),  // Light grey background
+    scaffoldBackgroundColor: Color(0xFFF3F4F6), // Light grey background
   );
 
   // Define the dark theme
@@ -32,10 +33,11 @@ class ThemeController extends GetxController {
     primarySwatch: Colors.blueGrey,
     fontFamily: 'Montserrat',
     textTheme: TextTheme(
-      headline1: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
+      headline1: TextStyle(
+          fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
       bodyText1: TextStyle(fontSize: 18, color: Colors.white70),
     ),
     cardColor: Color(0xFF1E1F28),
-    scaffoldBackgroundColor: Color(0xFF121212),  // Dark grey background
+    scaffoldBackgroundColor: Color(0xFF121212), // Dark grey background
   );
 }
